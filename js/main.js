@@ -3,6 +3,8 @@ console.log("JavaScript File is linked");
 //variables
 const labels = document.querySelectorAll(".label");
 const targetZones = document.querySelectorAll(".target-zone");
+const resetBtn = document.getElementById('reset-btn');
+const labelBox = document.getElementById('label-box');   
 let currentDraggedElement = null;
 
 //functions
