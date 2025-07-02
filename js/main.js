@@ -34,3 +34,10 @@ targetZones.forEach(target => {
     target.addEventListener("dragover", dragOver);
     target.addEventListener("drop", drop);
 });
+
+resetBtn.addEventListener("click", () => {
+    document.querySelectorAll(".label").forEach(label => {
+    labelBox.appendChild(label);
+    label.setAttribute("draggable", true);
+    });
+});
