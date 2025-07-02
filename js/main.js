@@ -19,6 +19,7 @@ function dragOver(event) {
 
 function drop(event) {
     event.preventDefault();
+    if (this.querySelector(".label")) return;
     this.appendChild(currentDraggedElement);
     currentDraggedElement = null;
 }
